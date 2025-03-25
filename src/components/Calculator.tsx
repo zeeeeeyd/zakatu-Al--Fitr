@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Calculator as CalculatorIcon, Users, Scale, Share2 } from 'lucide-react';
 import { type FoodType, type ZakatCalculation, type Translation, FOOD_WEIGHTS } from '../types';
 
-const SAA_WEIGHT_KG = 2.75;
+const SAA_WEIGHT_KG= 2.75;
 
 interface CalculatorProps {
   language: string;
