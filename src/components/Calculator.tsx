@@ -34,10 +34,16 @@ export function Calculator({ language, translations }: CalculatorProps) {
   
 
   const handleShare = () => {
-    const message = `${translations.requiredZakat}: ${calculation.totalWeight.toFixed(2)} ${translations.unit} ${translations.of} ${translations.foods[calculation.foodType]}`;
+    const message = `${translations.requiredZakat}: ${calculation.totalWeight.toFixed(2)} ${translations.unit} ${translations.of} ${translations.foods[calculation.foodType]}.
+    
+    📌 The Zakat al-Fitr for *${calculation.numberOfPeople}* people with *${translations.foods[calculation.foodType]}* is *${calculation.totalWeight.toFixed(2)} ${translations.unit}*.
+    
+    🔍 Calculate yours easily with our app: https://zakatu-al-fitr.vercel.app/`;
+  
     const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
+  
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 max-w-md w-full" dir={language === 'ar' ? 'rtl' : 'ltr'}>
