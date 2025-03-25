@@ -9,6 +9,10 @@ export const translations: Record<string, Translation> = {
     requiredZakat: 'Required Zakat',
     baseMessage: 'Based on one Ṣāʿ per person',
     shareVia: 'Share via WhatsApp',
+    deadlineTitle: 'Zakat al-Fitr Deadline',
+    currentTime: 'Current Time',
+    deadlineMessage: '**Deadline: Before Eid Prayer**',
+    hadith: 'The Prophet (ﷺ) commanded that Zakat al-Fitr be given before the people go out for prayer. — [Hadith: Ibn Umar, Sahih al-Bukhari]',
     foods: {
       flour: 'Flour',
       rice: 'Rice',
@@ -24,7 +28,7 @@ export const translations: Record<string, Translation> = {
       raisins: 'Raisins',
     },
     unit: 'kg',
-    of: 'of'
+    of: 'of',
   },
   ar: {
     title: 'دليل زكاة الفطر',
@@ -34,12 +38,16 @@ export const translations: Record<string, Translation> = {
     requiredZakat: 'الزكاة المطلوبة',
     baseMessage: 'على أساس صاع واحد للشخص',
     shareVia: 'شارك عبر واتساب',
+    deadlineTitle: 'موعد زكاة الفطر',
+    currentTime: 'الوقت الحالي',
+    deadlineMessage: 'الموعد النهائي: قبل صلاة العيد',
+    hadith: 'أمر النبي (ﷺ) بزكاة الفطر أن تؤدى قبل خروج الناس إلى الصلاة. — [حديث: ابن عمر، صحيح البخاري]',
     foods: {
       flour: 'دقيق',
       rice: 'أرز',
       wheat: 'قمح',
       lentils: 'عدس',
-      split_peas: 'جلبانة ',
+      split_peas: 'جلبانة',
       semolina: 'سميد',
       chickpeas: 'حمص',
       couscous: 'كسكس',
@@ -49,6 +57,6 @@ export const translations: Record<string, Translation> = {
       raisins: 'زبيب',
     },
     unit: 'كغ',
-    of: 'من'
-  }
+    of: 'من',
+  },
 };

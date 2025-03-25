@@ -9,6 +9,7 @@ import { ThemeToggle } from "./components/ThemeToggle";
 import { hadiths } from "./data/hadiths";
 import { translations } from "./translations";
 import type { Hadith } from "./types";
+import { TimeDisplay } from "./components/TimeDisplay";
 
 function App() {
   const [selectedHadith, setSelectedHadith] = useState<Hadith | null>(hadiths[0]);
@@ -75,7 +76,9 @@ function App() {
                 </div>
               </div>
             </nav>
-
+            <div className="max-w-4xl mx-auto mt-8">
+              <TimeDisplay language={language} translations={translations[language]} />
+            </div>
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <motion.div layout className="space-y-6">

@@ -66,4 +66,18 @@ export interface Translation {
   foods: Record<FoodType, string>;
   unit: string;
   of: string;
+  deadlineTitle: string;
+  currentTime: string;
+  deadlineMessage: string;
+  hadith: string;
+}
+
+export interface TimeDisplayProps {
+  language: string;
+  translations: {
+    currentTime: string;
+    deadlineTitle: string;
+    deadlineMessage: string;
+    hadith: string;
+  };
 }
