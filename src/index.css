@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-arabic {
+    font-family: 'Amiri', serif;
+  }
+
+  body {
+    @apply antialiased;
+  }
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+.islamic-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zM22.343 0L13.8 8.544 15.214 9.96l9.9-9.9h-2.77zm22.628 0L53.8 8.829 52.385 10.243 41.8 0h3.17zm-16.97 0L36.8 8.829 35.385 10.243 24.8 0h3.17zm11.314 0L48.8 9.114 47.385 10.53 35.8 0h3.17zm-16.97 0L36.8 9.114 35.385 10.53 23.8 0h3.17zM20.343 0L28.8 8.458 30.214 9.873l-10.9-9.9h-2.77zM8.343 0L16.8 8.458 18.214 9.873l-10.9-9.9h-2.77zM14 0L25.8 11.8 27.214 13.214 14 0zm-7.657 0L18.8 11.8 20.214 13.214 6.343 0h-2.77zM8.343 0L20.8 12.457 22.214 13.87 8.343 0zM49.657 0L37.8 12.457 36.385 13.87 50.657 0h-1zM42.343 0L30.8 12.457 29.385 13.87 43.657 0h-1.314zM35.029 0L23.8 12.457 22.385 13.87 36.657 0h-1.628zM27.714 0L16.8 12.457 15.385 13.87 29.657 0h-1.943zM20.4 0L9.8 12.457 8.385 13.87 22.657 0h-2.257z' fill='%2310b981' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
