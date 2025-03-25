@@ -34,15 +34,25 @@ export function Calculator({ language, translations }: CalculatorProps) {
   
 
   const handleShare = () => {
-    const message = `${translations.requiredZakat}: ${calculation.totalWeight.toFixed(2)} ${translations.unit} ${translations.of} ${translations.foods[calculation.foodType]}.
-    
-    📌 The Zakat al-Fitr for *${calculation.numberOfPeople}* people with *${translations.foods[calculation.foodType]}* is *${calculation.totalWeight.toFixed(2)} ${translations.unit}*.
-    
-    🔍 Calculate yours easily with our app: https://zakatu-al-fitr.vercel.app/`;
+    const messages = {
+      en: `📢 ${translations.requiredZakat}: *${calculation.totalWeight.toFixed(2)} ${translations.unit} ${translations.of} ${translations.foods[calculation.foodType]}*.
   
+  📌 The Zakat al-Fitr for *${calculation.numberOfPeople}* people with *${translations.foods[calculation.foodType]}* is *${calculation.totalWeight.toFixed(2)} ${translations.unit}*.
+  
+  🔍 Calculate yours easily with our app: https://zakatu-al-fitr.vercel.app`,
+  
+      ar: `📢 ${translations.requiredZakat}: *${calculation.totalWeight.toFixed(2)} ${translations.unit} ${translations.of} ${translations.foods[calculation.foodType]}*.
+  
+  📌 زكاة الفطر لـ *${calculation.numberOfPeople}* أشخاص باستخدام *${translations.foods[calculation.foodType]}* هي *${calculation.totalWeight.toFixed(2)} ${translations.unit}*.
+  
+  🔍 احسب زكاتك بسهولة عبر تطبيقنا: https://zakatu-al-fitr.vercel.app`
+    };
+  
+    const message = messages[language];  
     const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
+  
   
 
   return (
