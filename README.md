@@ -6,9 +6,8 @@ Zakat al-Fitr Calculator & Guide is a modern, user-friendly web application desi
 ## 🎯 Features
 
 ### 🧮 Zakat Calculator
-- Users can calculate the required amount of food (e.g., wheat, dates, barley, raisins, dried cheese) based on their household size.
+- Users can calculate the required amount of food (e.g., wheat, dates, barley, raisins... etc) based on their household size.
 - The calculation follows the Hadith specifying one Ṣāʿ per person (approx. **2.5 to 3 kg**).
-- Supports multiple units of measurement and region-based equivalents.
 
 ### 📖 Food Equivalents Guide
 - Provides a reference for common food equivalents for **one Ṣāʿ** in different regions.
